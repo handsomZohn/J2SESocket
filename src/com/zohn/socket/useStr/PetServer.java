@@ -1,6 +1,8 @@
 package com.zohn.socket.useStr;
 
 import java.io.*;
+import java.net.Inet4Address;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -34,6 +36,12 @@ public class PetServer {
             String reply = "全世界最可爱的宋明潞；";
             printWriter.print(reply);
             printWriter.flush();
+
+            // 获取客户端ip
+            InetAddress localHost = InetAddress.getLocalHost();
+            String hostAddress = localHost.getHostAddress();
+            String hostName = localHost.getHostName();
+            System.out.println("hostAddress:" + hostAddress + ", hostName:" + hostName);
 
             // 5.关闭资源
             printWriter.close();
