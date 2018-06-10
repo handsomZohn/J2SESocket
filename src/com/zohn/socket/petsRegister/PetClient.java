@@ -34,7 +34,6 @@ public class PetClient {
             while (!((reply = bufferedReader.readLine()) == null)) {
                 System.out.println("我是宠物主人，宠物店的响应为：" + reply );
             }
-
             //  4.关闭资源
             bufferedReader.close();
             inputStream.close();

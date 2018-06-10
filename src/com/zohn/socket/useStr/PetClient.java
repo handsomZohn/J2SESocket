@@ -21,7 +21,7 @@ public class PetClient {
             InputStream inputStream = socket.getInputStream();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             // 3.利用流按照一定的协议对Socket进行读、写操作
-            String info = "sml是我家最可爱的虎妹子，咦嘻嘻;猪哥你说是不是啊？？咦嘻嘻";
+            String info = "宋明潞是我家最可爱的虎妹子，咦嘻嘻;猪哥你说是不是啊？？咦嘻嘻";
             printWriter.write(info);
             printWriter.flush();
             socket.shutdownOutput();
