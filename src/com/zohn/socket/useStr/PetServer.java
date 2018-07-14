@@ -10,6 +10,7 @@ import java.net.Socket;
  * 宠物店用户咨询[字符串方式实现]
  * 服务器端
  * Created by zhang on 2018/5/5.
+ * 流式套接字
  */
 public class PetServer {
     public static void main(String[] args) throws IOException {
